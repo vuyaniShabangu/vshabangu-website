@@ -43,6 +43,34 @@ body{
   color: rgba(0,0,0,.54)
 }
 
+.mdc-card__action-icons{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mdc-chip--selected {
+  color: #db6d67;
+  background-color: var(--mdc-theme-primary);
+  margin-left: 3px;
+  margin-top:3px;
+}
+
+.mdc-text-field--outlined {
+
+  border: none;
+      border-bottom-color: currentcolor;
+  overflow: visible;
+
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label{
+  border-color: #db6d67;
+  color: #db6d67;
+}
+
+.mdl-textfield__input{
+  color: rgb(114, 110, 110)
+}
+
 .company-logo{
   height: 100px;
   width: 100px;
