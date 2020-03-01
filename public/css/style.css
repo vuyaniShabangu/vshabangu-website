@@ -5,7 +5,7 @@ html{
   min-height: 100%;
 }
 
-body{
+.primary-page-body{
     background-image: url('../img/vuyaniCopy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,8 +13,8 @@ body{
     vertical-align: middle
 }
 
-.articles{
-  background-image: url('../img/sketch-bg.png');
+.seconday-page-body{
+  background-color: #f3f3f5;
 }
 
 .headtext{
@@ -35,6 +35,13 @@ body{
   text-align: center;
   width: 100%;
 }
+
+.mdc-typography--headline7{
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+}
+
 
 .demo-card__primary, .demo-card__secondary{
   padding: 0 1rem 8px;
@@ -127,9 +134,18 @@ body{
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
+  .sidenav a:hover, a.active{
     /*color: #f1f1f1;*/
     text-decoration: underline;
+  }
+  
+
+  .menu{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .sidenav .closebtn {
@@ -148,7 +164,7 @@ body{
 
   @media only screen and (max-width: 600px){
     .sidenav {padding-top: 15px;background-color: #ffb7b7}
-    body{
+    .primary-page-body{
       margin: 0;
       height: 100%;
       min-height: 100%;
@@ -179,6 +195,6 @@ body{
 
   .icon{
       position: absolute;
-      top:30px;
-      right: 60px;
+      top:15px;
+      right: 25px;
   }
